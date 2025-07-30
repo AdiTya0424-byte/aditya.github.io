@@ -6,51 +6,68 @@
   <title>Aditya Dilip Chalak</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #f8f9fa, #e0eafc);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      background-attachment: fixed;
       text-align: center;
-      padding: 40px;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
     img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #007BFF;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin-top: 20px;
     }
     h1 {
-      color: #333;
       font-size: 28px;
-      margin-bottom: 10px;
+      margin: 10px 0;
     }
     p {
-      font-size: 18px;
-      color: #444;
+      font-size: 16px;
+      margin: 5px 0;
     }
-    a {
+    a.button {
       display: inline-block;
-      margin-top: 20px;
-      color: white;
-      background-color: #007BFF;
+      margin-top: 15px;
       padding: 10px 20px;
-      border-radius: 5px;
+      color: white;
+      background: #ff5e62;
+      border-radius: 25px;
       text-decoration: none;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
-    a:hover {
-      background-color: #0056b3;
+    a.button:hover {
+      background: #e63946;
+    }
+    @media screen and (max-width: 600px) {
+      h1 { font-size: 24px; }
+      p { font-size: 14px; }
     }
   </style>
 </head>
 <body>
-  <img src="your-photo.png" alt="Aditya Dilip Chalak">
-  <h1>Aditya Dilip Chalak</h1>
-  <p><strong>CODE LEARNER</strong></p>
-  <p>Skills: C, C++, Python</p>
-  <p>Studies at Genba Moze College of Engineering, Wagholi, Pune</p>
-  <p>📞 Contact: 9766610520</p>
-  <p>📧 Email: adityachalak20@gmail.com</p>
-  <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank">Instagram</a>
+  <div class="container">
+    <img src="photo.png" alt="Aditya Dilip Chalak">
+    <h1>Aditya Dilip Chalak</h1>
+    <p><strong>CODE LEARNER</strong></p>
+    <p>Skills: C, C++, Python</p>
+    <p>Studies at Genba Moze College of Engineering, Wagholi, Pune</p>
+    <p>📞 9766610520</p>
+    <p>📧 adityachalak20@gmail.com</p>
+    <a class="button" href="https://www.instagram.com/aditya_chalak_patill/" target="_blank">Instagram</a>
+  </div>
 </body>
 </html>
