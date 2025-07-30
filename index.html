@@ -1,73 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Dilip Chalak</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
-      background-attachment: fixed;
-      text-align: center;
-      padding: 20px;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
     }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      background: pink;
+      position: absolute;
+      animation: float 10s infinite ease-in;
+      clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 20% 100%, 0% 35%);
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
     .container {
+      position: relative;
+      z-index: 1;
       max-width: 500px;
       margin: auto;
-      background: rgba(255,255,255,0.9);
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.95);
+      margin-top: 60px;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
     }
-    img {
-      width: 150px;
-      height: 150px;
+
+    .container img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       border: 5px solid #fff;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      margin-top: 20px;
+      box-shadow: 0 0 20px #ff5e62;
+      margin-bottom: 20px;
     }
+
     h1 {
-      font-size: 28px;
-      margin: 10px 0;
+      margin: 0;
+      font-size: 26px;
+      color: #d6336c;
     }
+
     p {
-      font-size: 16px;
-      margin: 5px 0;
+      font-size: 15px;
+      margin: 8px 0;
+      color: #333;
     }
-    a.button {
+
+    .button {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
+      margin-top: 20px;
+      padding: 10px 22px;
+      background-color: #ff5e62;
       color: white;
-      background: #ff5e62;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s ease;
+      transition: background 0.3s;
     }
-    a.button:hover {
-      background: #e63946;
+
+    .button:hover {
+      background-color: #d6336c;
     }
+
+    audio {
+      display: none;
+    }
+
     @media screen and (max-width: 600px) {
-      h1 { font-size: 24px; }
-      p { font-size: 14px; }
+      h1 { font-size: 22px; }
+      p { font-size: 13px; }
     }
   </style>
 </head>
 <body>
+
+  <!-- ❤️ Floating Hearts -->
+  <div class="hearts">
+    <div class="heart" style="left:10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left:20%; animation-delay: 2s;"></div>
+    <div class="heart" style="left:35%; animation-delay: 4s;"></div>
+    <div class="heart" style="left:55%; animation-delay: 1s;"></div>
+    <div class="heart" style="left:70%; animation-delay: 3s;"></div>
+    <div class="heart" style="left:85%; animation-delay: 5s;"></div>
+  </div>
+
+  <!-- 📄 Main Content -->
   <div class="container">
-    <img src="photo.png" alt="Aditya Dilip Chalak">
+    <img src="photo.png" alt="Aditya Chalak">
     <h1>Aditya Dilip Chalak</h1>
     <p><strong>CODE LEARNER</strong></p>
     <p>Skills: C, C++, Python</p>
-    <p>Studies at Genba Moze College of Engineering, Wagholi, Pune</p>
+    <p>🎓 Genba Moze College of Engineering, Wagholi, Pune</p>
     <p>📞 9766610520</p>
     <p>📧 adityachalak20@gmail.com</p>
-    <a class="button" href="https://www.instagram.com/aditya_chalak_patill/" target="_blank">Instagram</a>
+    <a class="button" href="https://www.instagram.com/aditya_chalak_patill/" target="_blank">Follow on Instagram</a>
   </div>
+
+  <!-- 🎶 Background Music -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/6bpqpi.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
 </body>
 </html>
