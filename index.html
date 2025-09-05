@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Dilip Chalak</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff0055;
+      text-shadow: 0 0 15px #ff0055;
+    }
+    .college {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+    .socials a {
+      font-size: 2rem;
+      margin: 10px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      color: #ff0055;
+      text-shadow: 0 0 15px #ff0055;
+    }
+    #counter {
+      font-weight: bold;
+      color: #00ffcc;
+    }
+  </style>
 </head>
 <body>
-  <div class="toggle-btn" onclick="toggleDarkMode()">🌙</div>
+  <h1>Hi, I'm Aditya Dilip Chalak</h1>
+  <p class="college">Ganba Moze College of Engineering, Wagoli, Pune</p>
 
-  <div class="hearts"></div>
-
-  <div class="container">
-    <img src="photo.png" alt="Aditya" class="profile" />
-    <h1 class="typewriter">Hi, I'm Aditya Dilip Chalak</h1>
-    <p class="scroll-reveal">📞 9766610520</p>
-    <p class="scroll-reveal">📧 adityachalak20@gmail.com</p>
-    <p class="scroll-reveal">💻 C | C++ | Python</p>
-    <p class="scroll-reveal">Student of Ai Ds Department</p>
-    <p class="scroll-reveal">🎓 Genba Moze College of Engineering, Wagholi</p>
-    <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank" class="scroll-reveal">📷 Instagram</a>
+  <div class="socials">
+    <a href="https://instagram.com/YOUR_ID" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://discordapp.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://www.snapchat.com/add/uknown_ooo01?share_id=zrb5NQw9LC8&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
   </div>
 
-  <audio autoplay loop>
-    <source src="romantic.mp3" type="audio/mpeg" />
-  </audio>
+  <p>👀 This site has been viewed <span id="counter"></span> times.</p>
 
-  <script src="script.js"></script>
+  <script>
+    fetch('https://api.countapi.xyz/hit/aditya0424-byte.github.io/visits')
+      .then(res => res.json())
+      .then(res => { document.getElementById('counter').innerText = res.value; });
+  </script>
 </body>
 </html>
