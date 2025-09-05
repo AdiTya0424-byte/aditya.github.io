@@ -9,21 +9,61 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: white;
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
     }
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #ff0055;
-      text-shadow: 0 0 15px #ff0055;
+      color: #00e6ff;
+      text-shadow: 0 0 15px #00e6ff;
+      margin: 20px 0 10px;
     }
     .college {
       font-size: 1.2rem;
       color: #bbb;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #00e6ff;
+      box-shadow: 0 0 25px #00e6ff;
+      object-fit: cover;
+    }
+    .skills {
+      margin: 30px 0;
+    }
+    .skills span {
+      background: rgba(0, 230, 255, 0.2);
+      border: 1px solid #00e6ff;
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+    .skills span:hover {
+      background: #00e6ff;
+      color: black;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 2px solid #00e6ff;
+      color: #00e6ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover {
+      background: #00e6ff;
+      color: black;
     }
     .socials a {
       font-size: 2rem;
@@ -32,22 +72,35 @@
       transition: 0.3s;
     }
     .socials a:hover {
-      color: #ff0055;
-      text-shadow: 0 0 15px #ff0055;
+      color: #00e6ff;
+      text-shadow: 0 0 15px #00e6ff;
     }
     #counter {
       font-weight: bold;
-      color: #00ffcc;
+      color: #00e6ff;
     }
   </style>
 </head>
 <body>
+  <img src="assets/profile.jpg" alt="Aditya Photo" class="profile-pic">
   <h1>Hi, I'm Aditya Dilip Chalak</h1>
-  <p class="college">Ganba Moze College of Engineering, Wagoli, Pune</p>
+  <p class="college">Genba Moze College of Engineering, Wagholi, Pune</p>
+
+  <div class="skills">
+    <span>C</span>
+    <span>C++</span>
+    <span>Python</span>
+    <span>Typing</span>
+  </div>
+
+  <div class="contact">
+    <a href="tel:9766610520">📞 9766610520</a>
+    <a href="mailto:adityachalak20@gmail.com">✉️ adityachalak20@gmail.com</a>
+  </div>
 
   <div class="socials">
     <a href="https://instagram.com/YOUR_ID" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://discordapp.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://discord.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://www.snapchat.com/add/uknown_ooo01?share_id=zrb5NQw9LC8&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
   </div>
 
