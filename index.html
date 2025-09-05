@@ -1,115 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aditya Dilip Chalak</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: white;
-      text-align: center;
-      padding: 40px 20px;
     }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #00e6ff;
-      text-shadow: 0 0 15px #00e6ff;
-      margin: 20px 0 10px;
-    }
-    .college {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-bottom: 25px;
-    }
-    .profile-pic {
-      width: 180px;
-      height: 180px;
+    .glow-img {
       border-radius: 50%;
-      border: 4px solid #00e6ff;
-      box-shadow: 0 0 25px #00e6ff;
-      object-fit: cover;
+      box-shadow: 0 0 30px #00c6ff, 0 0 60px #0072ff;
     }
-    .skills {
-      margin: 30px 0;
+    .social-icons a {
+      transition: transform 0.3s ease;
     }
-    .skills span {
-      background: rgba(0, 230, 255, 0.2);
-      border: 1px solid #00e6ff;
-      border-radius: 20px;
-      padding: 8px 15px;
-      margin: 5px;
-      display: inline-block;
-      font-size: 0.95rem;
-      transition: 0.3s;
-    }
-    .skills span:hover {
-      background: #00e6ff;
-      color: black;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      border-radius: 25px;
-      border: 2px solid #00e6ff;
-      color: #00e6ff;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .contact a:hover {
-      background: #00e6ff;
-      color: black;
-    }
-    .socials a {
-      font-size: 2rem;
-      margin: 10px;
-      color: #fff;
-      transition: 0.3s;
-    }
-    .socials a:hover {
-      color: #00e6ff;
-      text-shadow: 0 0 15px #00e6ff;
-    }
-    #counter {
-      font-weight: bold;
-      color: #00e6ff;
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
-<body>
-  <img src="assets/profile.jpg" alt="Aditya Photo" class="profile-pic">
-  <h1>Hi, I'm Aditya Dilip Chalak</h1>
-  <p class="college">Genba Moze College of Engineering, Wagholi, Pune</p>
+<body class="text-white">
 
-  <div class="skills">
-    <span>C</span>
-    <span>C++</span>
-    <span>Python</span>
-    <span>Typing</span>
-  </div>
+  <!-- Hero Section -->
+  <section class="text-center py-16">
+    <img src="assets/profile.jpg" alt="Profile" class="w-40 h-40 mx-auto mb-6 glow-img">
+    <h1 class="text-5xl font-bold">Aditya Dilip Chalak</h1>
+    <p class="text-lg mt-4 text-gray-300">Genba Moze College of Engineering, Wagholi, Pune</p>
+  </section>
 
-  <div class="contact">
-    <a href="tel:9766610520">📞 9766610520</a>
-    <a href="mailto:adityachalak20@gmail.com">✉️ adityachalak20@gmail.com</a>
-  </div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10 text-blue-400">💻 Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">C</h3>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">C++</h3>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">Python</h3>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold">Typing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="socials">
-    <a href="https://instagram.com/YOUR_ID" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://discord.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
-    <a href="https://www.snapchat.com/add/uknown_ooo01?share_id=zrb5NQw9LC8&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
-  </div>
+  <!-- Contact Section -->
+  <section class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-green-400">📞 Contact</h2>
+    <p class="mb-2">Phone: <a href="tel:9766610520" class="text-blue-400 hover:underline">9766610520</a></p>
+    <p>Email: <a href="mailto:adityachalak20@gmail.com" class="text-blue-400 hover:underline">adityachalak20@gmail.com</a></p>
+  </section>
 
-  <p>👀 This site has been viewed <span id="counter"></span> times.</p>
+  <!-- Social Links -->
+  <section class="py-12 text-center social-icons">
+    <h2 class="text-3xl font-bold mb-6 text-pink-400">🌐 Connect with me</h2>
+    <div class="flex justify-center space-x-6 text-3xl">
+      <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank" class="text-pink-500">📸</a>
+      <a href="https://discord.com/users/1nonlyaadi_04" target="_blank" class="text-blue-500">🎮</a>
+      <a href="https://www.snapchat.com/add/uknown_ooo01" target="_blank" class="text-yellow-400">👻</a>
+    </div>
+  </section>
 
-  <script>
-    fetch('https://api.countapi.xyz/hit/aditya0424-byte.github.io/visits')
-      .then(res => res.json())
-      .then(res => { document.getElementById('counter').innerText = res.value; });
-  </script>
+  <!-- Visitor Counter -->
+  <section class="py-8 text-center bg-gray-800">
+    <p class="text-gray-300">👀 Visitors:</p>
+    <img src="https://profile-counter.glitch.me/aditya0424-byte/count.svg" alt="Visitor Count" class="mx-auto mt-2">
+  </section>
+
+  <footer class="py-6 text-center text-gray-400 text-sm">
+    © 2025 Aditya Dilip Chalak | All Rights Reserved
+  </footer>
 </body>
 </html>
