@@ -1,93 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Dilip Chalak</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
+      text-align: center;
     }
-    .glow-img {
+    header {
+      padding: 50px 20px 20px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      box-shadow: 0 0 30px #00c6ff, 0 0 60px #0072ff;
+      border: 4px solid #fff;
+      box-shadow: 0px 0px 25px cyan;
+      object-fit: cover;
     }
-    .social-icons a {
-      transition: transform 0.3s ease;
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 2.5rem;
     }
-    .social-icons a:hover {
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #bbb;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+    .skills {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .skills h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: cyan;
+    }
+    .skills p {
+      font-size: 1.1rem;
+    }
+    .socials {
+      margin: 40px 0;
+    }
+    .socials a {
+      margin: 0 15px;
+      font-size: 2rem;
+      color: white;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      color: cyan;
       transform: scale(1.2);
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
-<body class="text-white">
-
-  <!-- Hero Section -->
-  <section class="text-center py-16">
-    <img src="assets/profile.jpg" alt="Profile" class="w-40 h-40 mx-auto mb-6 glow-img">
-    <h1 class="text-5xl font-bold">Aditya Dilip Chalak</h1>
-    <p class="text-lg mt-4 text-gray-300">Genba Moze College of Engineering, Wagholi, Pune</p>
-  </section>
-
-  <!-- About Me Section -->
-  <section class="py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-yellow-400">🙋 About Me</h2>
-    <p class="text-lg max-w-2xl mx-auto text-gray-300">
-      Hello! I am <span class="text-white font-semibold">Aditya Dilip Chalak</span> from 
-      <span class="text-blue-400 font-semibold">Chatrapati Sambhajinagar </span>. 
-      I am currently studying in <span class="text-green-400">Genba Moze College of Engineering, Wagholi, Pune</span>.
+<body>
+  <header>
+    <!-- Profile Photo -->
+    <img src="assets/me.jfif" alt="Profile Photo">
+    <h1>Aditya Dilip Chalak</h1>
+    <h2>From Chhatrapati Sambhajinagar</h2>
+    <p class="info">
+      🎓 Studying at <b>Genba Moze College of Engineering, Wagholi Pune</b><br>
+      📞 9766610520 | 📧 adityachalak20@gmail.com
     </p>
-  </section>
+  </header>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-16 bg-gray-900 text-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-10 text-blue-400">💻 Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h3 class="text-xl font-semibold">C</h3>
-        </div>
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h3 class="text-xl font-semibold">C++</h3>
-        </div>
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h3 class="text-xl font-semibold">Python</h3>
-        </div>
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h3 class="text-xl font-semibold">Typing</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-green-400">📞 Contact</h2>
-    <p class="mb-2">Phone: <a href="tel:9766610520" class="text-blue-400 hover:underline">9766610520</a></p>
-    <p>Email: <a href="mailto:adityachalak20@gmail.com" class="text-blue-400 hover:underline">adityachalak20@gmail.com</a></p>
+  <section class="skills">
+    <h3>My Skills</h3>
+    <p>C | C++ | Python | Typing</p>
   </section>
 
   <!-- Social Links -->
-  <section class="py-12 text-center social-icons">
-    <h2 class="text-3xl font-bold mb-6 text-pink-400">🌐 Connect with me</h2>
-    <div class="flex justify-center space-x-6 text-3xl">
-      <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank" class="text-pink-500">📸</a>
-      <a href="https://discord.com/users/1nonlyaadi_04" target="_blank" class="text-blue-500">🎮</a>
-      <a href="https://www.snapchat.com/add/uknown_ooo01" target="_blank" class="text-yellow-400">👻</a>
-    </div>
+  <div class="socials">
+    <a href="https://www.instagram.com/aditya_chalak_patill" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://discord.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://www.snapchat.com/add/uknown_ooo01?share_id=zrb5NQw9LC8&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
+  </div>
+
+  <footer>
+    © 2025 Aditya Chalak | All rights reserved.
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Dilip Chalak</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 50px 20px 20px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0px 0px 25px cyan;
+      object-fit: cover;
+    }
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #bbb;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+    .skills {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .skills h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: cyan;
+    }
+    .skills p {
+      font-size: 1.1rem;
+    }
+    .socials {
+      margin: 40px 0;
+    }
+    .socials a {
+      margin: 0 15px;
+      font-size: 2rem;
+      color: white;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      color: cyan;
+      transform: scale(1.2);
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Profile Photo -->
+    <img src="assets/me.jfif" alt="Profile Photo">
+    <h1>Aditya Dilip Chalak</h1>
+    <h2>From Chhatrapati Sambhajinagar</h2>
+    <p class="info">
+      🎓 Studying at <b>Genba Moze College of Engineering, Wagholi Pune</b><br>
+      📞 9766610520 | 📧 adityachalak20@gmail.com
+    </p>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h3>My Skills</h3>
+    <p>C | C++ | Python | Typing</p>
   </section>
 
-  <!-- Visitor Counter -->
-  <section class="py-8 text-center bg-gray-800">
-    <p class="text-gray-300">👀 Visitors:</p>
-    <img src="https://profile-counter.glitch.me/aditya0424-byte/count.svg" alt="Visitor Count" class="mx-auto mt-2">
-  </section>
+  <!-- Social Links -->
+  <div class="socials">
+    <a href="https://www.instagram.com/aditya_chalak_patill" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://discord.com/users/1nonlyaadi_04" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://www.snapchat.com/add/uknown_ooo01?share_id=zrb5NQw9LC8&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
+  </div>
 
-  <footer class="py-6 text-center text-gray-400 text-sm">
-    © 2025 Aditya Dilip Chalak | All Rights Reserved
+  <footer>
+    © 2025 Aditya Chalak | All rights reserved.
   </footer>
 </body>
 </html>
