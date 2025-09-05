@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Dilip Chalak</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: white;
       text-align: center;
     }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
+    header {
+      padding: 50px 20px;
     }
-
-    .profile-pic {
+    header img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 0 25px cyan;
+      border: 4px solid #ff4b5c;
+      box-shadow: 0 0 20px #ff4b5c;
+    }
+    header h1 {
+      margin: 15px 0 5px;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2em;
       margin-bottom: 20px;
+      color: #ff4b5c;
     }
-
-    h1 {
-      font-size: 28px;
-      margin: 10px 0;
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
     }
-
-    p {
-      font-size: 18px;
-      max-width: 600px;
-    }
-
-    .section {
-      margin: 40px 0;
-      padding: 20px;
-      background: rgba(0,0,0,0.3);
-      border-radius: 12px;
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-      width: 80%;
-      max-width: 700px;
-    }
-
-    footer {
-      margin-top: 40px;
+    .skill-box {
       padding: 15px;
-      text-align: center;
-      background: rgba(0,0,0,0.4);
-      font-size: 14px;
+      border: 1px solid #ff4b5c;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
     }
-
-    #visitor {
-      margin-top: 15px;
-      font-size: 16px;
-      color: cyan;
-      font-weight: bold;
+    .social-links a {
+      margin: 0 10px;
+      color: #ff4b5c;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .counter {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ff4b5c;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="me.jfif" alt="Aditya's Photo" class="profile-pic">
+
+  <!-- Hero Section -->
+  <header>
+    <img src="profile.png" alt="Aditya Profile Photo">
     <h1>Aditya Dilip Chalak</h1>
-    <p>CODE LEARNER | AI & DS Student | Genba Moze College of Engineering , Wagholi , Pune</p>
+    <p>From Chhatrapati Sambhajinagar | CODE LEARNER</p>
+  </header>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>Hello! I'm Aditya from Chhatrapati Sambhajinagar, currently pursuing Artificial Intelligence & Data Science at SPPU. I love exploring coding, new technologies, and building creative projects.</p>
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Aditya 👋<br>
+      Currently studying <b>AI & DS</b> at <b>SPPU, Pune</b> (Genba Moze College of Engineering).<br>
+      Passionate about coding, exploring technology and always learning something new.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">C Programming</div>
+      <div class="skill-box">C++ Programming</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">HTML & CSS</div>
+      <div class="skill-box">Problem Solving</div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li>💻 C Programming</li>
-        <li>⚙️ C++</li>
-        <li>🐍 Python</li>
-      </ul>
+  <!-- Social -->
+  <section>
+    <h2>Connect With Me</h2>
+    <div class="social-links">
+      <a href="mailto:adityachalak20@gmail.com">📧 Email</a>
+      <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank">📸 Instagram</a>
+      <a href="tel:+919766610520">📞 Call</a>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>📧 Email: <a href="mailto:adityachalak20@gmail.com" style="color:cyan;">adityachalak20@gmail.com</a></p>
-      <p>📱 Phone: 9766610520</p>
-      <p>📸 Instagram: <a href="https://www.instagram.com/aditya_chalak_patill/" target="_blank" style="color:cyan;">@aditya_chalak_patill</a></p>
-    </div>
-  </div>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Aditya Dilip Chalak. All rights reserved.</p>
-    <p id="visitor">Visitors: Loading...</p>
+    <p>Made with ❤️ by Aditya</p>
+    <div class="counter">
+      Visitor Count:
+      <img src="https://hitwebcounter.com/counter/counter.php?page=16792085&style=0006&nbdigits=5&type=page&initCount=0" 
+           title="Visitor Counter" alt="Web Counter">
+    </div>
   </footer>
 
-  <script>
-    // Visitor Counter
-    fetch('https://api.countapi.xyz/hit/aditya0424-byte.github.io/visits')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('visitor').innerText = "Visitors: " + data.value;
-      });
-  </script>
 </body>
 </html>
